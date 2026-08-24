@@ -75,6 +75,46 @@ The repository contains an enhanced version of the hotel management system with 
 
 ---
 
+## Live preview: 
+[Live preview] (dtan-final-project-production.up.railway.app)
+
+## local Host made by me preview
+<img width="1918" height="943" alt="Screenshot 2026-08-24 064950" src="https://github.com/user-attachments/assets/511da154-4da4-4213-8120-c045373fed57" />
+
+<img width="1919" height="941" alt="Screenshot 2026-08-24 065004" src="https://github.com/user-attachments/assets/c623a1e4-563e-4c20-881d-ea7f335a9d4d" />
+
+<img width="1919" height="949" alt="Screenshot 2026-08-24 065015" src="https://github.com/user-attachments/assets/d026aced-3b39-4b0f-8f34-967d84cfcfc7" />
+<img width="1920" height="938" alt="Screenshot 2026-08-24 065024" src="https://github.com/user-attachments/assets/fb3fb467-2627-4de9-a7d3-de817fa9b144" />
+<img width="1920" height="936" alt="Screenshot 2026-08-24 065033" src="https://github.com/user-attachments/assets/b3b60aec-34db-49ea-85ee-e92b1cdd79a8" />
+<img width="1920" height="944" alt="Screenshot 2026-08-24 065043" src="https://github.com/user-attachments/assets/c2470648-32ff-4457-940a-1b37fc048a02" />
+<img width="1920" height="942" alt="Screenshot 2026-08-24 065104" src="https://github.com/user-attachments/assets/96a7fc3a-a25b-4103-a924-f8aeaa488e84" />
+<img width="1920" height="946" alt="Screenshot 2026-08-24 065116" src="https://github.com/user-attachments/assets/bf4f17cf-bff0-44ac-aae2-c26f06be4a01" />
+
+
+## Local Host Enhanced by AI preview
+<img width="1920" height="947" alt="Screenshot 2026-08-24 065209" src="https://github.com/user-attachments/assets/dd8095cd-87cb-48f7-8267-83fe13bdd5f6" />
+
+<img width="1920" height="938" alt="Screenshot 2026-08-24 065538" src="https://github.com/user-attachments/assets/a8e29fd7-eac9-43d5-9df5-bb014a2bace3" />
+
+<img width="1920" height="941" alt="Screenshot 2026-08-24 065549" src="https://github.com/user-attachments/assets/9ee942cd-3c7e-414e-92c6-50f18a30d431" />
+
+<img width="1920" height="946" alt="Screenshot 2026-08-24 065554" src="https://github.com/user-attachments/assets/eb430649-96ae-48ed-9690-bd9a62d52b1e" />
+
+<img width="1920" height="936" alt="Screenshot 2026-08-24 065601" src="https://github.com/user-attachments/assets/95fed199-9f5c-4eb1-975d-a4463cc0e40c" />
+
+<img width="1920" height="946" alt="Screenshot 2026-08-24 065621" src="https://github.com/user-attachments/assets/76b4229b-c8ba-47f2-a8e4-d6e21ab34474" />
+
+<img width="1920" height="945" alt="Screenshot 2026-08-24 065628" src="https://github.com/user-attachments/assets/555f83bb-71c5-47e0-9ae7-f69ed5df2d53" />
+
+<img width="1920" height="940" alt="Screenshot 2026-08-24 065634" src="https://github.com/user-attachments/assets/cc928346-898b-4ee8-98e7-13f61ca300ab" />
+
+
+
+## Login Details
+staff login details 
+Password: Serene@2026
+Email: staff@serenestayvillas.com
+
 ## 📂 Project Structure
 
 ```text
@@ -123,6 +163,3 @@ DTAN-FINAL-PROJECT/
         └── README.md
             └── Project documentation
 
-staff login details 
-Password: Serene@2026
-Email: staff@serenestayvillas.com
