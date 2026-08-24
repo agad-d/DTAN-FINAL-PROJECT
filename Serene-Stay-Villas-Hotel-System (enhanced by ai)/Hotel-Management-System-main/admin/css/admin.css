@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Cookie&family=Poppins:wght@600&display=swap');
+
+:root {
+    --bg-text-shadow: 0 2px 4px rgb(13 0 77 / 8%), 0 3px 6px rgb(13 0 77 / 8%), 0 8px 16px rgb(13 0 77 / 8%);
+    --bg-box-shadow: 0px 0px 20px 6px rgb(0 0 0 / 34%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* text-shadow: var(--bg-text-shadow); */
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+.uppernav{
+    height: 50px;
+    /* background-color: rgb(78, 94, 112); */
+    background-image: linear-gradient(90deg, #70b7e6bc, #0000ffaa);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+}
+.navtoggle{
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+.logo {
+    height: 90%;
+    display: flex;
+}
+.logo .bluebirdlogo {
+    height: 100%;
+}
+.logo p {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(8, 17, 44);
+    text-shadow: var(--bg-text-shadow);
+}
+
+.logout button{
+    height: 30px;
+    width: 100px;
+    background-color: rgba(228, 24, 24, 0.789);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.sidenav {
+    position: absolute;
+    background-color: #0e1b3d;
+    width: 18%;
+    height: 100%;
+    color: #ffffff;
+}
+ul li{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0px 10px;
+    height: 50px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+ul li:hover{
+    background-color: #141dd498;
+}
+ul li.active{
+    background-color: #141dd498;
+}
+
+.mainscreen{
+    margin-left: 18%;
+}
+
+.frames{
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+
+.frames.active{
+    display: block;
+}
+
+
+/* temp */
+img{
+    height: 23px;
+}
+
+
+
+/* responsive stuff */
+#sidenavOverlay{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.45);
+    z-index: 250;
+}
+
+#sidenavOverlay.show{
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .navtoggle{
+        display: inline-block;
+    }
+    .logo p{
+        font-size: 20px;
+    }
+    .sidenav{
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 260px;
+        max-width: 78vw;
+        height: calc(100% - 50px);
+        transform: translateX(-100%);
+        transition: transform 0.28s ease;
+        z-index: 300;
+    }
+    .sidenav.open{
+        transform: translateX(0);
+    }
+    .mainscreen{
+        margin-left: 0;
+    }
+    .frames{
+        height: calc(100vh - 50px);
+    }
+}

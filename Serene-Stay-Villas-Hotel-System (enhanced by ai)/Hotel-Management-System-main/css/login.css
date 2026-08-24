@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --brand-ink: #2b2a25;
+    --brand-ink-soft: #5a584f;
+    --brand-olive: #7c8a55;
+    --brand-olive-dark: #545a34;
+    --brand-mustard: #b7924a;
+    --brand-cream: #f7f4ec;
+    --brand-cream-deep: #efeadb;
+    --brand-white: #ffffff;
+    --brand-dark-bg: #17160f;
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Poppins', sans-serif;
+    --shadow-soft: 0 10px 25px rgba(43, 42, 37, 0.12);
+    --shadow-lift: 0 20px 40px rgba(43, 42, 37, 0.22);
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    /* kept for backward-compat with any inline/legacy references */
+    --bg-text-shadow: 0 2px 4px rgb(13 0 77 / 8%), 0 3px 6px rgb(13 0 77 / 8%), 0 8px 16px rgb(13 0 77 / 8%);
+    --bg-box-shadow: 0px 0px 20px 6px rgb(0 0 0 / 34%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: var(--brand-cream);
+}
+
+:focus-visible{
+    outline: 3px solid var(--brand-mustard);
+    outline-offset: 2px;
+}
+
+.carousel_section{
+    box-shadow: none;
+    position: relative;
+    overflow: hidden;
+}
+
+/* side photo css */
+section {
+    height: 100%;
+    width: 50%;
+}
+
+.carousel-image {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-inner{
+    height: 100%;
+    position: relative;
+}
+
+.carousel-inner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(20,18,12,0.45) 0%, rgba(20,18,12,0.15) 45%, rgba(20,18,12,0.55) 100%);
+}
+
+/* login css */
+#auth_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand-cream);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.logo {
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0 26px;
+}
+
+.logo .bluebirdlogo {
+    height: 100%;
+}
+
+.logo p {
+    height: auto;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    color: var(--brand-ink);
+    text-shadow: none;
+}
+
+.auth_container {
+    height: auto;
+    width: 100%;
+    max-width: 440px;
+    margin: 0;
+    background-color: var(--brand-white);
+    border-radius: 20px;
+    box-shadow: var(--shadow-soft);
+    padding: 40px 10px;
+}
+
+#Log_in {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Log_in h2,
+#sign_up h2{
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 28px;
+    color: var(--brand-ink);
+    letter-spacing: 0.3px;
+}
+
+.role_btn {
+    display: flex;
+    gap: 10px;
+    margin: 22px 0 6px;
+    flex-wrap: wrap;
+    background-color: var(--brand-cream);
+    padding: 6px;
+    border-radius: 26px;
+}
+
+.role_btn .btns {
+    height: 40px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: transparent;
+    color: var(--brand-ink-soft);
+    font-size: 14.5px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.role_btn .btns:hover{
+    color: var(--brand-ink);
+}
+
+.btns.active,
+.btns.active:hover{
+    background-color: var(--brand-olive);
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(124, 138, 85, 0.3);
+}
+
+.authsection {
+    width: 100%;
+    margin: 14px 0 0;
+    display: none;
+    text-align: center;
+    animation: screen_animation .4s var(--ease);
+}
+/* toggle display */
+.user_login.active{
+    display: block;
+}
+
+.employee_login.active{
+    display: block;
+}
+
+.form-floating {
+    margin: 14px 0;
+    text-align: left;
+}
+
+.form-floating .form-control{
+    border: 1px solid #e3ded0;
+    background-color: var(--brand-cream);
+    border-radius: 12px;
+    font-size: 14.5px;
+    color: var(--brand-ink);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-floating .form-control:focus{
+    border-color: var(--brand-olive);
+    box-shadow: 0 0 0 3px rgba(124,138,85,0.18);
+}
+
+.form-floating label{
+    color: var(--brand-ink-soft);
+    font-size: 14.5px;
+}
+
+.auth_btn {
+    padding: 13px 40px;
+    border: 1px solid var(--brand-olive);
+    border-radius: 26px;
+    background-color: var(--brand-olive);
+    color: #fff;
+    z-index: 1;
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(124, 138, 85, 0.25);
+}
+
+.auth_btn:hover {
+    background-color: var(--brand-olive-dark);
+    border-color: var(--brand-olive-dark);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.footer_line{
+    margin: 20px 0 0;
+}
+
+.footer_line h6{
+    font-size: 13.5px;
+    font-weight: 400;
+    color: var(--brand-ink-soft);
+}
+
+.page_move_btn{
+    color: var(--brand-olive-dark);
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.page_move_btn:hover{
+    color: var(--brand-mustard);
+}
+
+/* signup */
+#sign_up{
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user_signup{
+    width: 100%;
+    text-align: center;
+    animation: screen_animation .4s var(--ease);
+}
+
+/* animation frame */
+@keyframes screen_animation {
+    0%{
+        transform: translateY(14px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+/* responsive stuff */
+
+@media(max-width: 62rem){
+    .auth_container{
+        max-width: 400px;
+        padding: 34px 8px;
+    }
+}
+
+@media(max-width: 30rem){
+    .carousel_section{
+        display: none;
+    }
+    #auth_section{
+        width: 100%;
+        padding: 30px 16px;
+    }
+    .auth_container
+    {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 6px;
+        box-shadow: none;
+        background-color: transparent;
+    }
+    #Log_in .role_btn .btns{
+        width: 120px;
+    }
+    .logo p{
+        font-size: 20px;
+    }
+}
