@@ -76,7 +76,7 @@ The repository contains an enhanced version of the hotel management system with 
 ---
 
 ## Live preview: 
-[Live preview](dtan-final-project-production.up.railway.app)
+[Live preview](https://dtan-final-project-production.up.railway.app/)
 
 ## local Host made by me preview
 <img width="1918" height="943" alt="Screenshot 2026-08-24 064950" src="https://github.com/user-attachments/assets/511da154-4da4-4213-8120-c045373fed57" />
